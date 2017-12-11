@@ -145,6 +145,8 @@ OBS: *hard handover* er ikke et problem i normal samtale, men kan være problema
 
 ## Opsætning af kald fra PSTN til GSM
 
+Foregår på samme måde fra PSTN til UMTS.
 
-
-
+1. Opkald ankommer fra PSTN til GMSC
+2. GMSC henter *routing number* fra HLR (som får det vha. en VLR)
+3. 
