@@ -20,4 +20,6 @@
 * Grundlæggende
 * supplerende
 * Eksempler
-####Implementering af supplerende tjenester (distribueret vs. centraliseret), herunder eksekvering af IN‐tjenester
+####Implementering af supplerende tjenester
+* distribueret vs. centraliseret
+* Eksekvering af IN‐tjenester
