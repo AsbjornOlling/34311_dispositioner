@@ -43,17 +43,44 @@
 ![GSM topologi](gsm_map.png)
 
 ### Andre arkitekturer:
-- **GPRS/EDGE**
-- **UMTS/HSDPA/HSUPA**
-- **LTE**
+
+#### GPRS/EDGE
+Udbygning af GSM, til pakkekoblet data
+
+**Nye enheder:**
+- **PCU:** Packet Control Unit
+	- Sidder fast på en BSC
+	- Bestemmer hvilke (MTS-)timeslots og rammer en mobil sender i
+* **SGSN:** Serving GPRS Support Node
+	- Basically det samme som en MSC, men pakkekoblet.
+	- Håndterer celleskift
+	- Håndterer også error control
+* **GGSN:** Gateway GPRS Support Node
+	- Basically det samme som en GMCS
+	- Forbinder til andre pakke-koblede netværk (dvs. internettet)
+
+#### **UMTS/HSDPA/HSUPA**
+*Ikke* en udbygning af GSM - helt ny netværksarkitektur.
+
+
 
 ## Procedurer
 
 ### Attachment
+1. Mobiltelefonen scanner GSM-frekvenser efter info om netværket
+2. Hvis netværket tilhører en godkendt operatør, prøver telefonen at registrere sig på netværket ved at sende IMEI og IMSI (*International Mobile Subscriber Identity*) numre - til MSC.
+3. Netværket etablerer kyptografisk forbindelse vha. AuC (*challenge-response* metode til key-exchange).
+4. MSC'en sneder info til HLR - VLR opdateres.
+5. MSC sender signal til mobilen for at beskræfte at proceduren er gennemført.
+
+#### Attachment i UMTS og LTE
 
 
-### Location Updating
+#### Detachment
+1. Når man slukker telefonen, sender den et *detach*-signal til MSC.
+2. MSC sletter info i VLR
 
-### Handover
+#### Location Updating
+#### Handover
 
 ## Opsætning af kald fra PSTN til GSM
