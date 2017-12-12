@@ -24,7 +24,7 @@ De første $n$ bytes refererer til subnettet af enheden, og de sidste refererer 
 - meget større adresser (128bit)
 - mindre header 
 - ingen checksum
-* fragmentering hos afsender
+- fragmentering hos afsender
 
 ## TCP
 

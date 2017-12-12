@@ -13,7 +13,9 @@
 ####Routing i IP net
 * Subnet
 * Indholdet af routing‐tabeller
-	* Destination, Interface, Next-hop####Aggregering af netværksadresser i CIDR
+	* Destination, Interface, Next-hop
+	
+####Aggregering af netværksadresser i CIDR
 * Statisk
 * Dynamisk
 
